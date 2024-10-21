@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backg-color: rgb(226, 221, 221);
+  --text-color: rgb(44, 43, 43);
+  --nav-backg-color: white;
+  --uu-color: burlywood;
+}
+
+body {
+  background-color: var(--backg-color);
+  color: var(--text-color);
+}
+
+body,
+html {
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+body.show {
+  background-color: var(--text-color);
+  color: var(--backg-color);
+}
+body.show nav {
+  background-color: var(--text-color);
+}
+body.show nav :hover {
+  color: var(--uu-color);
+}
+body.show header {
+  background-color: var(--text-color);
+}
+body.show .image {
+  background-color: var(--text-color);
+}
+body.show .stock {
+  background-color: var(--text-color);
+  box-shadow: 0 0 10px white;
+}
+body.show .middle {
+  border: 1px solid rgb(238, 229, 229);
+}
+body.show .stock .text :hover {
+  color: var(--uu-color);
+}
+
+.container header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--nav-backg-color);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 1px black;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.container header .profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
+}
+.container header .profile img {
+  width: 7vmin;
+}
+.container header .header-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: space-around;
+}
+.container header .header-container img {
+  width: 5vmin;
+}
+.container header .header-container button {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container header .header-container .input-search {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--nav-backg-color);
+  border-radius: 10px;
+  width: 10rem;
+}
+.container header .header-container .input-search input {
+  border: none;
+  outline: none;
+  width: 6rem;
+}
+.container header .header-container .input-search svg {
+  margin-left: 25px;
+}
+.container svg {
+  width: 20px;
+}
+.container nav {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  transition: 0.9s ease;
+  padding: 20px;
+  background-color: var(--nav-backg-color);
+  position: fixed;
+  margin-top: 62px;
+  gap: 2rem;
+}
+.container nav :hover {
+  color: black;
+}
+.container nav a {
+  text-decoration: none;
+  color: var(--backg-color);
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+}
+.container nav.show {
+  display: none;
+  opacity: 0;
+}
+
+.product2 {
+  display: flex;
+  flex-direction: row !important;
+  margin-left: 20%;
+}
+
+.sales .product {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 3fr 3fr 6fr;
+}
+.sales .stock {
+  background-color: var(--nav-backg-color);
+  padding: 15px;
+  border-radius: 10px;
+  width: 50vmin;
+  box-shadow: 10px 10px 10px gray;
+  margin-left: -30px;
+}
+.sales .stock .image {
+  background-color: var(--nav-backg-color);
+  width: 12vmin;
+  padding: 7px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px gray;
+}
+.sales .stock .image img {
+  width: 7vmin;
+}
+.sales .stock .image :hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.sales .stock .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sales .stock .text h1 {
+  font-weight: 100;
+  font-family: poppins, sans-serif;
+}
+.sales .stock .text h4 {
+  margin-right: 10px;
+}
+.sales .stock .text h4 span {
+  margin-left: 10px;
+}
+.sales .stock .text :hover {
+  color: var(--backg-color);
+}
+
+main {
+  margin-left: 45vmin;
+  margin-top: 7rem;
+}
+main h1 {
+  font-family: poppins, sans-serif;
+}
+main .sub-text {
+  display: flex;
+  gap: 6rem;
+  margin-top: 20px;
+  font-size: 19px;
+  font-family: poppins, sans-serif;
+  font-weight: 100px;
+  text-transform: capitalize;
+}
+
+.middle img {
+  width: 30vmin;
+}
+
+.middle h1 {
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 3vmin;
+}
+
+.all {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 35px;
+}
+.all h1 {
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+.recent {
+  display: flex;
+  margin-left: -30px;
+  gap: 15px;
+}
+
+.middle {
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 10px;
+}
+.middle .text {
+  margin: 10px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  gap: 15vmin;
+}
+.paragraph p {
+  font-weight: bold;
+}
+.paragraph p span {
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+main.show {
+  margin-left: -0.1vmin;
+}
+main.show .stock {
+  width: 62vmin;
+  height: 30vh;
+}
+
+@media (max-width: 850px) {
+  body .header-container {
+    display: flex;
+    gap: 10px;
+  }
+  body .header-container button {
+    padding: 0;
+  }
+  body nav {
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+  }
+  main {
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  main .text h1,
+  main p {
+    width: 10px;
+  }
+  .sign-in {
+    min-width: 87px;
+  }
+  main.show {
+    margin-left: -0.1rem;
+  }
+  main.show .stock {
+    width: 95vmin;
+    height: 30vh;
+  }
+  main.show .paragraph {
+    gap: 50vmin;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .middle h1 {
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 5vmin;
+  }
+  .sales .product {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .sales .product .stock {
+    width: 75vmin;
+    margin-left: 13px;
+  }
+  .sales .product .stock .image {
+    margin-left: 30px;
+  }
+  .sales .product .stock .text {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sales .product .stock .text h4 {
+    margin-left: 50px;
+  }
+  .recent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .middle {
+    width: 19rem;
+  }
+  .middle .text h1 {
+    min-width: 500px;
+    font-weight: bold;
+  }
+  .paragraph {
+    padding: 0px;
+    gap: 40vmin;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .paragraph p {
+    font-weight: bold;
+    font-size: 5vmin;
+  }
+  .paragraph p span {
+    font-weight: 100;
+    margin-left: 10px;
+  }
+  .all {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=dashboard.css.map */
