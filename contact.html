@@ -4,66 +4,104 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="contact.css">
+      <title>Contact Us | FOOT WEARS</title>
+      <link rel="stylesheet" href="info-pages.css">
 </head>
 
 <body>
       <nav class="navbar">
             <h1 class="logo">
-                  <img src="image/remove.png" alt="">foot wears
+                  <a href="index.html" style="color:var(--primary);">FOOT WEARS</a>
             </h1>
             <ul class="nav-link">
-                  <li class="active"><a href="index.html">home</a></li>
-                  <li><a href="faqs.html">faqs</a></li>
-                  <li><a href="contact.html">contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li class="active"><a href="contact.html">Contact</a></li>
+                  <li class="ctn" style="padding: 0.5rem 1rem;">
+                        Account
+                        <div class="dropdown">
+                              <ul style="padding: 10px; list-style: none;">
+                                    <li><a href="dashboard.html" style="color:var(--bg-dark);">User</a></li>
+                                    <li><a href="admin-form.html" style="color:var(--bg-dark);">Admin</a></li>
+                              </ul>
+                        </div>
+                  </li>
             </ul>
-            <img src="image/ooo-removebg-preview.png" alt="" class="menu-btn" title="menu">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <!--   <path
-                              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-                  </svg> -->
-      </nav>
-      <header>
-            <h1>contact</h1>
-      </header>
-      <div class="container">
-            <div class="text">
-                  <h1>Feel Free To Send Us a Message About Your Needs</h1>
-                  <h2>
-                  For any enquiry, Call Us: 08123689153</h2>
-                  <h2>For any enquiry, Email Us: footwear@gmail.com</h2>
-                  <h2>Address: BOLADALE SHOPPING COMPLEX LAGOS-IBADAN EXPRESS WAY</h2>
-            </h2>
+            <div class="menu-btn">
+                  <svg viewBox="0 0 100 80" width="30" height="30" fill="white">
+                        <rect width="100" height="15" rx="8"></rect>
+                        <rect y="30" width="100" height="15" rx="8"></rect>
+                        <rect y="60" width="100" height="15" rx="8"></rect>
+                  </svg>
             </div>
-            <form action="">
-                  <div class="input">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Surname">
+      </nav>
+
+      <header>
+            <h1>Get In Touch</h1>
+      </header>
+
+      <div class="content-wrapper">
+            <div class="contact-container">
+                  <div class="contact-info">
+                        <h2>We'd love to hear from you.</h2>
+                        <p style="margin-bottom: 3rem; color: #666; font-size: 1.1rem;">Whether you have a question about our collections, sustainability efforts, or need assistance with an order, our team is ready to help.</p>
+                        
+                        <div class="info-item">
+                              <h4>Call Us</h4>
+                              <p>+234 812 368 9153</p>
+                        </div>
+                        
+                        <div class="info-item">
+                              <h4>Email Us</h4>
+                              <p>concierge@footwears.com</p>
+                        </div>
+                        
+                        <div class="info-item">
+                              <h4>Our Atelier</h4>
+                              <p>Boladale Shopping Complex,<br>Lagos-Ibadan Express Way, Nigeria</p>
+                        </div>
                   </div>
-                  <div class="sec-input">
-                        <input type="email" placeholder="Enter Your email">
-                        <input type="text" placeholder="Message" class="Message">
+                  
+                  <div class="contact-form">
+                        <form action="#">
+                              <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                              </div>
+                              <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Your Email" required>
+                              </div>
+                              <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" placeholder="How can we help you?" required></textarea>
+                              </div>
+                              <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
                   </div>
-                  <div class="button">
-                        <button>send Message</button>
-                  </div>
-            </form>
-      </div>
-      <div class="footer-hr">
-            <span></span>
-            <p>&copy;2024 All Rights Reserved By foot wears Created By Mutech</p>
-            <span></span>
+            </div>
       </div>
 
+      <footer class="footer">
+            <p>follow our journey</p>
+            <div class="footer-image">
+                  <a href="#" style="color:var(--primary); font-weight:bold; margin:0 10px;">Pinterest</a>
+                  <a href="#" style="color:var(--primary); font-weight:bold; margin:0 10px;">Tiktok</a>
+                  <a href="#" style="color:var(--primary); font-weight:bold; margin:0 10px;">Youtube</a>
+                  <a href="#" style="color:var(--primary); font-weight:bold; margin:0 10px;">Instagram</a>
+                  <a href="#" style="color:var(--primary); font-weight:bold; margin:0 10px;">Facebook</a>
+            </div>
+            <div class="social" style="margin-top:20px; opacity:0.7;">
+                  <p>&copy; 2026 FOOT WEARS. ALL RIGHTS RESERVED.</p>
+            </div>
+      </footer>
 
       <script>
             const menuBtn = document.querySelector('.menu-btn');
-            const navlink = document.querySelector('.nav-link');
+            const navlink = document.querySelector('.nav-link')
             menuBtn.addEventListener('click', () => {
-                  navlink.classList.toggle('mobile-menu');
-            });
+                  navlink.classList.toggle('mobile-menu')
+            })
       </script>
 </body>
 

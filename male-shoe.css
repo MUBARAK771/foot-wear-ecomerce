@@ -1,237 +1,144 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: whitesmoke;
-  cursor: pointer;
-}
+@import url('index.css');
+
+/* Header & Hero Overrides */
 header {
-  background-color: burlywood;
-  padding: 10px;
-  box-shadow: 0 0px 10px black;
-}
-header h1 {
-  text-align: center;
-  font-weight: 700;
-  font-family: "Courier New";
-}
-.sub-header {
-  text-align: center;
-  background-color: transparent;
-  margin-top: 30px;
-  /* box-shadow: 0 0px 5px rgb(102, 95, 95); */
-  padding: 10px;
-}
-.sub-header h1 {
-  font-weight: 700;
-  font-family: "Courier New", Courier, monospace;
-}
-.first-shoe img {
-  width: 40vmin;
-}
-.first-shoe h1 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.first-shoe h2 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.first-shoe h1:hover {
-  color: burlywood;
-}
-.first-shoe h2:hover {
-  color: burlywood;
-}
-.first-shoe {
-  border: 1px solid black;
-  width: 45vmin;
-  margin: 5px;
-  border-radius: 10px;
-  transition: 0.5s ease;
-}
-.first-shoe:hover {
-  box-shadow: 0 0px 10px rgb(102, 95, 95);
-  transform: scale(1.1);
-  border: none;
-  /* transform: translateY(-10px); */
-}
-.three {
-  display: grid;
-  grid-template-columns: 6fr 6fr 6fr 6fr;
-  margin-top: 20px;
-}
-.first-shoe p {
-  padding: 10px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.sec-shoe img {
-  width: 30vmin;
-  border-radius: 10px;
-}
-.sec-shoe {
-  border: 1px solid black;
-  width: 45vmin;
-  /* background-color: white; */
-  border-radius: 10px;
-  transition: 0.5s ease;
-}
-.sec-shoe p {
-  padding: 10px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.sec-shoe:hover {
-  box-shadow: 0 0px 10px rgb(102, 95, 95);
-  transform: scale(1.1);
-  border: none;
-  /* transform: translateY(-10px); */
-}
-.sec-shoe h1:hover {
-  color: burlywood;
-}
-.sec-shoe h2:hover {
-  color: burlywood;
-}
-.sec-shoe h1 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.sec-shoe h2 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.all {
-  display: grid;
-  grid-template-columns: 6fr 6fr 6fr 6fr;
-  /* gap: 60px; */
-  margin-top: 10vmin;
-  margin: 5px;
-}
-h3 {
-  padding: 5px;
-  text-transform: capitalize;
-  font-weight: 100;
-  background-color: burlywood;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-align: center;
-  color: whitesmoke;
-}
-a {
-  text-decoration: none;
-}
-@media (max-width: 850px) {
-  .three {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-  }
-  .all {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    gap: 10px;
-  }
-  .all-row {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-  }
-  .row-column {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-  }
-}
-.first-last-shoe img {
-  width: 45vmin;
-}
-.first-last-shoe {
-  border: 1px solid black;
-  width: 45vmin;
-  border-radius: 10px;
-}
-.sec-shoe p {
-  padding: 10px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.first-shoe img{
-        border-radius: 10px;
-}
-.first-last-shoe:hover {
-  box-shadow: 0 0px 10px rgb(102, 95, 95);
-  transition: 0.5s ease;
-  border: none;
-  /* transform: translateY(-10px); */
-}
-.first-last-shoe:hover {
-  color: burlywood;
-}
-.first-last-shoe h2:hover {
-  color: burlywood;
-}
-.first-last-shoe h1 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.first-last-shoe h2 {
-  padding: 10px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-.half-shoe {
-  border: 1px solid black;
-  width: 45vmin;
-  border-radius: 10px;
-}
-.half-shoe img {
-  border-radius: 10px;
-}
-.half-shoe h1 {
-  font-weight: 100;
-  margin: 5px;
-}
-.half-shoe h2 {
-  font-weight: 100;
-  margin: 5px;
-}
-.half-shoe p {
-  margin: 5px;
-}
-.half-shoe:hover {
-  border: none;
-  box-shadow: 0 0 10px gray;
-}
-.row-column {
-  display: grid;
-  grid-template-columns: 6fr 6fr 12fr;
-}
-.background {
-  background: url(male-image/24Q3_July_SeasonalCore_WorldOfComfort_WoolRunner2_Site_Nav_Tile_Mobile_1125x324.avif);
+  height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero-landing.jpg');
   background-position: center;
   background-size: cover;
-  height: 20vh;
-  border-radius: 3px;
-  text-align: center;
-  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.sub-header {
+  padding: 3rem 10% 1rem;
+  text-align: left;
+}
+
+.sub-header h1 {
+  font-size: 2rem;
+  color: var(--bg-dark);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 5px solid var(--primary);
+  padding-left: 20px;
+}
+
+/* Product Container & Grid */
+.container, .second-container {
+  padding: 2rem 10%;
+}
+
+.three, .all {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Product Card Styling */
+.first-shoe, .sec-shoe {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: auto; /* Reset fixed width */
+  margin: 0;
+}
+
+.first-shoe:hover, .sec-shoe:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.first-shoe img, .sec-shoe img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.first-shoe h1, .sec-shoe h1 {
+  font-size: 1.2rem;
+  padding: 1.5rem 1.5rem 0.5rem;
+  color: var(--bg-dark);
+  font-weight: 600;
+}
+
+.first-shoe h2, .sec-shoe h2 {
+  font-size: 1.5rem;
+  padding: 0 1.5rem 0.5rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.first-shoe p, .sec-shoe p {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+.first-shoe h3, .sec-shoe h3 {
+  background: var(--primary);
+  color: var(--bg-dark);
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  border-radius: 0;
+}
+
+.first-shoe a:hover h3, .sec-shoe a:hover h3 {
+  background: var(--primary-hover);
+}
+
+/* Background Banner */
+.background {
+  height: 30vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/banner-explore.jpg');
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--text-light);
+  margin: 4rem 10%;
+  border-radius: 12px;
 }
+
 .background h1 {
-  max-width: 100px;
-  font-weight: 100;;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  max-width: none;
 }
-.background span{
-      background-color: rgb(0, 0, 0);
-      height: 5px;
-      width: 10rem;
-      border-radius: 10px;
+
+.background span {
+  width: 100px;
+  height: 4px;
+  background: var(--primary);
+  margin-top: 1rem;
 }
+
+@media (max-width: 850px) {
+  .three, .all {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
